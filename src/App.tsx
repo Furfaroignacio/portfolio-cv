@@ -11,7 +11,7 @@ import { Services } from "./sections/Services";
 
 export default function App() {
   return (
-      <div className="min-h-dvh bg-gradient-to-b from-white to-neutral-50 text-neutral-900 antialiased">
+      <div className="min-h-dvh bg-white text-neutral-900 dark:bg-neutral-950 dark:text-neutral-100">
 
         <Navbar />
         <main className="w-full">

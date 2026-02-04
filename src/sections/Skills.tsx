@@ -4,7 +4,14 @@ import { profile } from "../data/profile";
 
 export function Skills() {
   return (
-    <section id="skills" className="py-16 bg-neutral-50">
+    <section
+      id="skills"
+      className="
+        py-16
+        bg-neutral-50
+        dark:bg-neutral-950
+      "
+    >
       <Container>
         <SectionTitle
           title="Skills"
@@ -15,7 +22,22 @@ export function Skills() {
           {profile.skills.map((s) => (
             <span
               key={s}
-              className="rounded-full border border-neutral-200 bg-white px-4 py-2 text-sm text-neutral-700"
+              className="
+                rounded-full
+                border border-neutral-200
+                bg-white
+                px-4 py-2
+                text-sm
+                text-neutral-700
+                transition
+
+                hover:bg-neutral-100
+
+                dark:border-white/10
+                dark:bg-neutral-900
+                dark:text-neutral-200
+                dark:hover:bg-neutral-800
+              "
             >
               {s}
             </span>

@@ -20,38 +20,65 @@ const services = [
   },
 ];
 
-
 export function Services() {
   return (
-    <section id="services" className="py-16 bg-neutral-50">
+    <section
+      id="services"
+      className="
+        py-16
+        bg-neutral-50
+        dark:bg-neutral-950
+      "
+    >
       <Container>
-        <SectionTitle
-          title="Servicios"
-          
-        />
+        <SectionTitle title="Servicios" />
 
         <div className="grid gap-6 sm:grid-cols-2">
           {services.map((s) => (
             <div
               key={s.title}
-              className="rounded-2xl border border-neutral-200 bg-white p-6 hover:shadow-md hover:-translate-y-0.5 transition-all"
+              className="
+                rounded-2xl
+                border border-neutral-200
+                bg-white
+                p-6
+                transition-all
+                hover:-translate-y-0.5
+                hover:shadow-md
 
+                dark:border-white/10
+                dark:bg-neutral-900
+                dark:hover:shadow-black/40
+              "
             >
-              <h3 className="text-lg font-semibold">{s.title}</h3>
-              <p className="mt-2 text-neutral-600">{s.desc}</p>
+              <h3 className="text-lg font-semibold text-neutral-900 dark:text-neutral-100">
+                {s.title}
+              </h3>
+
+              <p className="mt-2 text-neutral-600 dark:text-neutral-300">
+                {s.desc}
+              </p>
             </div>
           ))}
         </div>
-        <p className="mt-10 text-center text-neutral-600">
-  ¿Tenés un proyecto en mente?{" "}
-  <a
-    href="#contact"
-    className="font-medium text-neutral-900 underline underline-offset-4 hover:text-neutral-700"
-  >
-    Hablemos
-  </a>
-</p>
 
+        <p className="mt-10 text-center text-neutral-600 dark:text-neutral-400">
+          ¿Tenés un proyecto en mente?{" "}
+          <a
+            href="#contact"
+            className="
+              font-medium
+              text-neutral-900
+              underline underline-offset-4
+              hover:text-neutral-700
+
+              dark:text-neutral-100
+              dark:hover:text-white
+            "
+          >
+            Hablemos
+          </a>
+        </p>
       </Container>
     </section>
   );

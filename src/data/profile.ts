@@ -23,7 +23,7 @@ export const projects = [
   description: "Web para escritor: biografía, libros, prensa y contacto.",
   tags: ["React", "TypeScript", "Tailwind"],
   demoUrl: "https://autor-portfolio.vercel.app/",
-  repoUrl: "https://github.com/Furfaroignacio/autor-portfolio/tree/main",
+  repoUrl: "https://github.com/Furfaroignacio/autor-portfolio/tree/feature/blog-backend",
   href: "https://autor-portfolio.vercel.app/",
     image: "/images/projects/guido-escritor.png",
 
